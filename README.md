@@ -1,6 +1,14 @@
 ### vit + vue3
 ```
 模仿别人的ui组件库，自己写的个人ui组件库
+
+npm run build
+
+npm login //登录到npm
+
+npm init -y //进入到打包文件初始化包名 name不能重名，不然会报错
+
+npm punlish //上传到npm
 ```
 
 ### 快速使用
