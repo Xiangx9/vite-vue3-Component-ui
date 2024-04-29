@@ -19,11 +19,15 @@ npm install  xiangx--ui --save
 ```
 import { createApp } from 'vue'
 import App from '@/App.vue'
+
 import XUI from 'xiangx--ui'
 import 'xiangx--ui/dist/style.css'
 
 const app = createApp(App)
+
+app.provide('$utils',XUI.EUtils) //引入方法
 app.use(XUI)
+
 app.mount('#app')
 ```
 ### 按需引用
@@ -35,4 +39,8 @@ import { xButton, xInput } from 'xinlun-ui'
 ```
 <x-button>默认按钮</x-button> 
 <x-button type="primary">主要按钮</x-button>
+
+//全局使用方法
+let utils = inject("$utils");
+let {handleFirstUpperCase}=utils
 ```
