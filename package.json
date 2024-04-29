@@ -1,0 +1,33 @@
+{
+  "name": "xiangx-ui",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist/*"
+  ],
+  "main": "dist/xiangx-ui.umd.js",
+  "module": "dist/xiangx-ui.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/xiangx-ui.es.js",
+      "require": "./dist/xiangx-ui.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "highlight.js": "^11.5.1",
+    "sass": "^1.52.2",
+    "vite-plugin-md": "^0.14.0",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "unplugin-vue-define-options": "^1.4.3",
+    "vite": "^5.2.0"
+  }
+}
